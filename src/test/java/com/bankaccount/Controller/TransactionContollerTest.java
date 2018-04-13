@@ -42,22 +42,6 @@ public class TransactionContollerTest {
         JSONAssert.assertEquals(expected,result.getResponse().getContentAsString(),false);
     }
 
-   // @Test
-
-//    public void getAllTransactions()throws Exception{
-//        Mockito.when(transactionService.getBalance()).thenReturn(mockTransaction.getAmount());
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/transactions").accept(MediaType.APPLICATION_JSON_VALUE);
-//        MvcResult result =mvc.perform(requestBuilder).andReturn();
-//        String expected="[\n" +
-//                "    {\n" +
-//                "        \"reference\": \"A\",\n" +
-//                "        \"type\": \"Deposit\",\n" +
-//                "        \"amount\": 100,\n" +
-//                "        \"time\": \"2018-01-27 12:01:10\"\n" +
-//                "    }\n" +
-//                "]";
-//        JSONAssert.assertEquals(expected,result.getResponse().getContentAsString(),false);
-//    }
 
     @Test
     public void deposit() throws Exception {
